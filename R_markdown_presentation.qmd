@@ -1,0 +1,68 @@
+---
+title: "R_markdown_presentation"
+format: revealjs
+editor: visual
+---
+
+## Code
+To elaborate on the types of datatypes in R language, please read the following.
+1. Integer
+2. Character
+3. String
+4. double
+
+## Integer
+
+
+```{r Integer}
+x <- 26L
+typeof(x)
+for (i in seq_along(10)){
+  print(paste(i*i))
+}
+```
+1. we can add integer with double and get output as double.
+
+
+```{r sum}
+new <- x+3.2
+print(new)
+```
+## Character:
+
+
+```{r Character}
+a <-  'string'
+typeof(a)
+for (i in a){
+  print(i)
+}
+```
+2. logical output is used in if condition and as flags.
+
+```{r}
+if(TRUE){
+  a
+}
+```
+
+## Logical:
+
+```{r logical }
+z <-  FALSE
+typeof(z)
+for (i in seq_along(10)){
+  print(i*i*i)
+}
+```
+
+## Double
+
+
+```{r double}
+y <- 32.2
+typeof(y)
+for (i in seq_along(10)){
+  print(i*y)
+}
+```
